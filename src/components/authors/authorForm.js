@@ -11,16 +11,16 @@ var AuthorForm = React.createClass({
 		errors: React.PropTypes.object
 	},
 
-    render: function() {
-        return (
-            <form>
+	render: function() {
+		return (
+			<form>
 				<h1>Manage Author</h1>
 				<Input
 					name="firstName"
 					label="First Name"
 					value={this.props.author.firstName}
-					onChange={this.props.onChange} 
-					error={this.props.errors.firstName}/>
+					onChange={this.props.onChange}
+					error={this.props.errors.firstName} />
 
 				<Input
 					name="lastName"
@@ -31,8 +31,8 @@ var AuthorForm = React.createClass({
 
 				<input type="submit" value="Save" className="btn btn-default" onClick={this.props.onSave} />
 			</form>
-        );
-    }
+		);
+	}
 });
 
 module.exports = AuthorForm;
